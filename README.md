@@ -52,8 +52,6 @@ where
 group by Category, Product_Name
 order by total_revenue desc
 limit 1;
-![Screenshot 2025-06-14 095951](https://github.com/user-attachments/assets/be070666-48b5-4f49-8acd-6b1fb10e2fc6)
-
 
 * column chart visualizing the top selling product, i used powerbi generated this chart from mysql query results*
 
