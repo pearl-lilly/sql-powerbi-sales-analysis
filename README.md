@@ -65,20 +65,20 @@ To uncover seasonality patterns, I analyzed total revenue by product, year, and 
 
 ### 💡 Key Insights:
 - **Biotin** showed consistent peak performance, especially in:
-  - **September 2024** (₦38,346)
-  - **June 2020** (₦35,136)
-  - **August 2020** (₦35,039)
+  - **September 2024** ($38,346)
+  - **June 2020** ($35,136)
+  - **August 2020** ($35,039)
 - **Melatonin** had high revenue in:
-  - **July 2023** (₦38,239)
-  - **May 2021** (₦34,463)
-- **Whey Protein** peaked in **May 2023** (₦38,217)
+  - **July 2023** ($38,239)
+  - **May 2021** ($34,463)
+- **Whey Protein** peaked in **May 2023** ($38,217)
 - **Pre-Workout** ranked high in:
-  - **August 2020** (₦37,575)
-  - **January 2023** (₦35,900)
-  - **September 2024** (₦34,616)
+  - **August 2020** ($37,575)
+  - **January 2023** ($35,900)
+  - **September 2024** ($34,616)
 - **Vitamin C** revenue increased in cooler months:
-  - **October 2023** (₦36,244)
-  - **July 2023** (₦34,397)
+  - **October 2023** ($36,244)
+  - **July 2023** ($34,397)
 - Supplements like **BCAA**, **Zinc**, **Iron Supplement**, and **Multivitamin** showed stable demand with strong seasonal variations.
 
 ### 🧾 SQL Query Used
@@ -105,9 +105,9 @@ By grouping total revenue by country and year, I identified how each region cont
 ### 💡 Key Insights:
 
 - **2020–2022**: Sales were fairly competitive across all three countries, with Canada and the UK slightly ahead of the USA.
-- **2023**: The UK took the lead with ₦1,572,626 in revenue, followed by Canada and then the USA.
-- **2024**: Canada saw a major spike, generating ₦1,563,908 — overtaking both the UK and the USA.
-- **2025 (YTD)**: The revenue gap has narrowed significantly — Canada (₦356,967), UK (₦354,328), and USA (₦311,303) are nearly equal, indicating a **balanced distribution** and possibly a plateau.
+- **2023**: The UK took the lead with $1,572,626 in revenue, followed by Canada and then the USA.
+- **2024**: Canada saw a major spike, generating $1,563,908 — overtaking both the UK and the USA.
+- **2025 (YTD)**: The revenue gap has narrowed significantly — Canada ($356,967), UK ($354,328), and USA ($311,303) are nearly equal, indicating a **balanced distribution** and possibly a plateau.
 
 This shows that while Canada and the UK have alternated leadership over the years, the **USA has maintained steady growth**, and **2025 indicates a shift toward equal market presence**.
 
