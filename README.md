@@ -124,6 +124,56 @@ group by
 order by
         year(sale_date) desc;
 ```
+| Year | Canada   | USA      | UK       |
+|------|----------|----------|----------|
+| 2020 | 1,474,112 | 1,327,318 | 1,521,966 |
+| 2021 | 1,423,500 | 1,391,720 | 1,479,048 |
+| 2022 | 1,538,239 | 1,400,584 | 1,434,000 |
+| 2023 | 1,491,903 | 1,406,354 | 1,572,626 |
+| 2024 | 1,563,908 | 1,523,470 | 1,342,008 |
+| 2025 |   356,967 |   311,303 |   354,328 |
+*Table for distribution of sales across location 
+
+
+
+### 🧪 Business Question  
+**Which e-commerce platform (Amazon, Walmart, iHerb) has performed best in terms of total revenue and total units sold?**
+
+---
+
+### 💡 Key Insights:
+
+- **iHerb** leads in both categories:
+  - 🧾 **Total Revenue**: $7,855,289
+  - 📦 **Total Units Sold**: 225,427
+- **Amazon** follows closely:
+  - 🧾 **Revenue**:  $7,669,489 
+  - 📦 **Units Sold**: 220,623
+- **Walmart** ranks third:
+  - 🧾 **Revenue**: $7,388,576
+  - 📦 **Units Sold**: 212,428
+
+This indicates that **iHerb is the most effective platform** for supplement sales, outperforming its competitors in both sales volume and earnings. The tight margin between platforms also suggests strong market competition.
+
+### 🧾 SQL Query Used
+```sql
+select
+        Plaform,
+       sum(Units_Sold) as total_units,
+       sum(Revenue) as total_revenue
+from
+       sales_data
+group by
+        Plaform
+order by
+        total_revenue desc;
+```
+| Platform | Total Revenue ($ | Total Units Sold |
+|----------|-------------------|------------------|
+| iHerb    | 7,855,289         | 225,427          |
+| Amazon   | 7,669,489         | 220,623          |
+| Walmart  | 7,388,576         | 212,428          |
+*Table for revenue, units sold by platform*
 
 
 
