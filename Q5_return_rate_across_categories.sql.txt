@@ -1,0 +1,10 @@
+-- How do return rates vary across different product categories?
+-- Which products have the highest and lowest return rates?
+select Category,
+Product_Name,
+sum(Units_Returned) as returned,
+sum(Units_Sold) AS total_sold,
+  ROUND(SUM(Units_Returned) / SUM(Units_Sold) * 100, 2) AS return_rate_per
+from sales_data
+group by Category, Product_Name
+order by returned desc;
