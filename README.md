@@ -53,7 +53,7 @@ group by Category, Product_Name
 order by total_revenue desc
 limit 1;
 
-* column chart visualizing the top selling product, i used powerbi generated this chart from mysql query results*
+
 
 
 
