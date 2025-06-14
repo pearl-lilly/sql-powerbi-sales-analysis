@@ -124,7 +124,7 @@ group by
 order by
         year(sale_date) desc;
 ```
-| Year | Canada   | USA      | UK       |
+| Year | Canada($)   | USA($)      | UK($)       |
 |------|----------|----------|----------|
 | 2020 | 1,474,112 | 1,327,318 | 1,521,966 |
 | 2021 | 1,423,500 | 1,391,720 | 1,479,048 |
@@ -132,7 +132,7 @@ order by
 | 2023 | 1,491,903 | 1,406,354 | 1,572,626 |
 | 2024 | 1,563,908 | 1,523,470 | 1,342,008 |
 | 2025 |   356,967 |   311,303 |   354,328 |
-*Table for distribution of sales across location 
+*Table for distribution of sales across location* 
 
 
 
@@ -168,7 +168,7 @@ group by
 order by
         total_revenue desc;
 ```
-| Platform | Total Revenue ($ | Total Units Sold |
+| Platform | Total Revenue ($) | Total Units Sold |
 |----------|-------------------|------------------|
 | iHerb    | 7,855,289         | 225,427          |
 | Amazon   | 7,669,489         | 220,623          |
