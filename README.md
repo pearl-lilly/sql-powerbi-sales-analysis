@@ -30,6 +30,7 @@ To translate the comprehensive SQL analysis into tangible, actionable insights, 
 This project was designed to answer key business questions around supplement sales performance using SQL for data exploration
 and Power BI for visualization. Each query provided insight into different aspects of the dataset, from revenue patterns to product and platform performance.
 
+### 🧪 Business Question
 ## 1. Highest Revenue-Generating Product (5-Year Overview)
 Business Objective:
 Identify the most profitable product and category over a 5-year period to guide strategic focus in marketing, inventory, and investment.
@@ -40,7 +41,7 @@ Within this category, Biotin generated the highest total revenue of $1,486,806 a
 Strategic Implication:
 Biotin should be considered a flagship product. With its strong revenue performance, it's a top candidate for promotional campaigns, 
 expanded distribution, or bundling strategies to drive even greater returns and capitalize on its proven market success.
-
+### 🧾 SQL Query Used
 ```sql
 select 
        Category,
@@ -52,6 +53,78 @@ where
 group by Category, Product_Name
 order by total_revenue desc
 limit 1;
+```
+ 
+
+### 🧪 Business Question  
+**How has monthly revenue changed over time? Are there specific months or quarters when certain supplement products perform better?**
+
+### 🔍 Summary of Findings  
+To uncover seasonality patterns, I analyzed total revenue by product, year, and month.
+ This helped identify peak performance months and revenue trends across the 5-year period.
+
+### 💡 Key Insights:
+- **Biotin** showed consistent peak performance, especially in:
+  - **September 2024** (₦38,346)
+  - **June 2020** (₦35,136)
+  - **August 2020** (₦35,039)
+- **Melatonin** had high revenue in:
+  - **July 2023** (₦38,239)
+  - **May 2021** (₦34,463)
+- **Whey Protein** peaked in **May 2023** (₦38,217)
+- **Pre-Workout** ranked high in:
+  - **August 2020** (₦37,575)
+  - **January 2023** (₦35,900)
+  - **September 2024** (₦34,616)
+- **Vitamin C** revenue increased in cooler months:
+  - **October 2023** (₦36,244)
+  - **July 2023** (₦34,397)
+- Supplements like **BCAA**, **Zinc**, **Iron Supplement**, and **Multivitamin** showed stable demand with strong seasonal variations.
+
+### 🧾 SQL Query Used
+```sql
+select 
+       Product_Name,
+       year(sale_date) as year,
+       date_format(sale_date,'%m') as month,
+       sum(Revenue) as total_revenue
+from sales_data
+group by
+        year(sale_date), month, Product_Name
+order by
+        total_revenue desc;
+```
+
+### 🧪 Business Question  
+**What is the distribution of sales across the three locations (Canada, USA, UK), and has this changed over the years?**
+
+
+### 🔍 Summary of Findings  
+By grouping total revenue by country and year, I identified how each region contributed to total sales over a 6-year period. The analysis highlights shifting market dominance and performance stability by geography.
+
+### 💡 Key Insights:
+
+- **2020–2022**: Sales were fairly competitive across all three countries, with Canada and the UK slightly ahead of the USA.
+- **2023**: The UK took the lead with ₦1,572,626 in revenue, followed by Canada and then the USA.
+- **2024**: Canada saw a major spike, generating ₦1,563,908 — overtaking both the UK and the USA.
+- **2025 (YTD)**: The revenue gap has narrowed significantly — Canada (₦356,967), UK (₦354,328), and USA (₦311,303) are nearly equal, indicating a **balanced distribution** and possibly a plateau.
+
+This shows that while Canada and the UK have alternated leadership over the years, the **USA has maintained steady growth**, and **2025 indicates a shift toward equal market presence**.
+
+
+### 🧾 SQL Query Used
+```sql
+select 
+       Location,
+       year(sale_date) as year,
+       sum(Revenue) as  revenue
+from sales_data
+group by
+        Location, year(sale_date)
+order by
+        year(sale_date) desc;
+```
+
 
 
 
