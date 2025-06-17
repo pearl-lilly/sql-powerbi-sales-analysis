@@ -369,7 +369,25 @@ GROUP BY
     Category
 ORDER BY
     gross_revenue_rank;
+<details>
+<summary>✅ Conclusion</summary>
 
+This project provided a comprehensive analysis of supplement sales data using **SQL** for robust querying and **Power BI** for dynamic visualization. By exploring sales trends, product performance, return rates, and revenue breakdowns across platforms and regions, we uncovered key insights that support strategic decision-making.
+
+Each finding was paired with clear, business-focused recommendations to help drive growth, reduce inefficiencies, and optimize marketing and inventory strategies.
+
+This project not only demonstrates proficiency in SQL and Power BI, but also highlights the value of translating raw data into actionable insights that address real-world business challenges in the health and wellness sector.
+<summary>🔍 Limitations</summary>
+
+- The dataset does not include customer-level information, which limits behavioral or demographic analysis.  
+- External factors like marketing campaigns, seasonal demand, or stock availability were not included in the dataset.    
+- Return reasons were not specified, so return rate insights are based solely on quantity, not context.
+
+<summary>🚀 Next Steps</summary>
+- Incorporate time series analysis to uncover seasonal trends and performance over specific periods.  
+- Enrich the dataset with customer demographics or feedback data to gain deeper consumer insights.  
+- Analyze customer retention or product repurchase rates (if data becomes available).  
+- Include cost of goods sold (COGS) data to enhance profitability analysis and refine margin insights.  
 
 
 
