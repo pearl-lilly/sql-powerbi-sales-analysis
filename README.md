@@ -16,7 +16,7 @@ In today's data-rich environment, the ability to derive actionable insights from
 9. If we calculate net revenue (after accounting for returns), how does the ranking of products or categories change compared to gross revenue?
 
 # 🛠 Tools Used
--*MySQL Workbench 8.x* – For structured SQL queries and database exploration
+- *MySQL Workbench 8.x* – For structured SQL queries and database exploration
 - *Power BI Desktop (June 2024 update)* – For visualizing trends and metrics
 - *DAX (Data Analysis Expressions)* – For dynamic aggregations and custom metrics in Power BI
 
