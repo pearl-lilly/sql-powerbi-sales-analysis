@@ -42,9 +42,12 @@ Strategic Implication:
 Biotin should be considered a flagship product. With its strong revenue performance, it's a top candidate for promotional campaigns, 
 expanded distribution, or bundling strategies to drive even greater returns and capitalize on its proven market success.
 ## Recommendation
-    * -*Marketing & Promotion:* Launch dedicated, high-impact campaigns positioning Biotin as a "hero product." Explore premium branding, influencer collaborations, and targeted digital advertising that highlight its long-term proven efficacy and customer loyalty.
-    * -*Cross-Pollination of Success:** Analyze the marketing, pricing, and distribution strategies that work best for Biotin and assess their applicability to other products in the Vitamin category and potentially to high-potential products in *other* categories.
-    * -*Experimentation Culture:* Implement A/B testing for product page optimization, marketing creatives, and pricing strategies across different product segments to continuously learn and improve.
+- *Marketing & Promotion:* Launch dedicated, high-impact campaigns positioning Biotin as a "hero product." 
+  Explore premium branding, influencer collaborations, and targeted digital advertising that highlight its long-term proven efficacy and customer loyalty.
+- *Cross-Pollination of Success:* Analyze the marketing, pricing, and distribution strategies 
+    that work best for Biotin and assess their applicability to other products in the Vitamin category and potentially to high-potential products in *other* categories.
+- *Experimentation Culture:* Implement A/B testing for product page optimization, marketing creatives, 
+    and pricing strategies across different product segments to continuously learn and improve.
 ### 🧾 SQL Query Used
 ```sql
 select 
